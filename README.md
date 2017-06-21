@@ -1,2 +1,2 @@
 # coursera-assignment-1
-https://github.com/mogo062/coursera-assignment-1.git
+https://mogo062.github.io/coursera-assignment-1/
