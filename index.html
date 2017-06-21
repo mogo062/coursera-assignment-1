@@ -15,19 +15,26 @@
    <div class="container" ng-controller="LunchCheckController">
      <h1>Lunch Checker</h1>
 
-         <div class="form-group">
-             <input id="lunch-menu" type="text" ng-model="items"
+         <div class="form-group {{msgClass}}">
+             <input id="lunch-menu" type="text" ng-model="lunchMenu"
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control">
+             <span  class="help-block"> Empty item isn't counted  </span>
          </div>
          <div class="form-group">
              <button class="btn btn-default"  ng-click="checkValidItems();">Check If Too Much</button>
          </div>
-         <div class="form-group message">
-           <!-- Your message can go here. -->
-           {{msg}}
+         <div class="form-group message {{msgClass}}" >
+            <label class="control-label"> {{msg}}</label>
          </div>
+          <div class="form-group message">
+              <label class="control-label">Total Item :  {{menuLength}}</label>
+          </div>
+
    </div>
+   <script id="__bs_script__">//<![CDATA[
+       document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+   //]]></script>
 
 </body>
 </html>
