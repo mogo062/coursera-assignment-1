@@ -1,12 +1,12 @@
 (function(){
  'use strict';
 
-var app = angular.module('courseraAssignment1',[])
+var app = angular.module('LunchCheck',[])
 
-app.controller('courseraAssignmentController',courseraAssignmentController);
+app.controller('LunchCheckController',LunchCheckController);
 
-courseraAssignmentController.$inject=['$scope','$filter','$injector'];
-function courseraAssignmentController($scope,$filter,$injector){
+LunchCheckController.$inject=['$scope','$filter','$injector'];
+function LunchCheckController($scope,$filter,$injector){
   $scope.items=""
   $scope.checkValidItems=function(){
     if($scope.items === "" ){
